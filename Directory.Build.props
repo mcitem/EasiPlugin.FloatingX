@@ -1,0 +1,18 @@
+<Project>
+  <Import Project="build\Version.props" />
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <Deterministic>true</Deterministic>
+    <PathMap>$(MSBuildThisFileDirectory)=/_/</PathMap>
+    <PackageOutputPath>$(MSBuildThisFileDirectory)bin\$(Configuration)</PackageOutputPath>
+    <Company>mcitem</Company>
+
+    <Author>mcitem</Author>
+    <Authors>mcitem</Authors>
+    <RepositoryUrl>https://github.com/mcitem/EasiPlugin.FloatingX</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/mcitem/EasiPlugin.FloatingX</PackageProjectUrl>
+
+    <RepositoryType>git</RepositoryType>
+    <Copyright>Copyright (c) 2026 mcitem. Third-party materials retain their original rights.</Copyright>
+  </PropertyGroup>
+</Project>

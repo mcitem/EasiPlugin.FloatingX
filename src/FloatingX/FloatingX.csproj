@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+
+    <AssemblyName>EasiPlugin.FloatingX</AssemblyName>
+    <RootNamespace>FloatingX</RootNamespace>
+    <PackageId>EasiPlugin.FloatingX</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <ENPackageId>EasiPlugin.FloatingX</ENPackageId>
+    <Product>希沃悬浮窗增强</Product>
+    <Description>自定义希沃悬浮窗按钮顺序，支持清屏、WPS 与 PowerPoint 整页翻页和空白白板授课。</Description>
+
+    <!-- 引用 EasiNote 的默认级别：
+          - none: 无任何 EasiNote 依赖
+          - api: 仅 API 和 API 的依赖
+          - core: 包含大多数功能的程序集（不含扩展功能）
+          - most: 绝大多数程序集（包含扩展功能）
+          - all: 所有会加载到 EasiNote 进程的托管程序集 -->
+    <UseEasiNote>all</UseEasiNote>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="dotnetCampus.EasiPlugin.Sdk" Version="2.1.1-alpha.4" />
+  </ItemGroup>
+</Project>
